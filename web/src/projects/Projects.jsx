@@ -1,3 +1,4 @@
+import Card from './card/Card'
 import projectsClasses from './project.module.css'
 import { vanilla } from './data.js'
 
@@ -20,31 +21,14 @@ function Projects() {
                     <section className={projectsClasses.projects__js}>
                         {
                             vanillaProjects.map(project => (
-                                <div key={project.title} className={projectsClasses.vanilla_card}>
-                                    <div className={projectsClasses.vanilla_img}>
-                                        <img src={project.img} alt='project image' />
-                                    </div>
-                                    <h2 className={projectsClasses.vanilla_title_card}>
-                                        {project.title}
-                                    </h2>
-                                    <section className={projectsClasses.vanilla_desc}>
-                                        {project.desc}
-                                    </section>
-                                    <section className={projectsClasses.vanilla_links_content}>
-                                        <a
-                                            href={project.gitUrl}
-                                            className={projectsClasses.vanilla_btn}
-                                        >
-                                            Ver Código
-                                        </a>
-                                        <a
-                                            href={project.demoUrl}
-                                            className={projectsClasses.vanilla_btn}
-                                        >
-                                            Ver Demo
-                                        </a>
-                                    </section>
-                                </div>
+                                <Card
+                                    key={project.title}
+                                    title={project.title}
+                                    img={project.img}
+                                    gitUrl={project.gitUrl}
+                                    demoUrl={project.demoUrl}
+                                    desc={project.desc}
+                                />
                             ))
                         }
                     </section>
