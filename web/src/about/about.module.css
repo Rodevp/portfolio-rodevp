@@ -1,0 +1,76 @@
+.about {
+    display: grid;
+    grid-template-areas: "image image"
+                         "about_me about_me";
+    background-color: var(--background);
+    padding-bottom: 1em;
+}
+
+.content__image {
+    width: 100%;
+    padding: 1em 0;
+    margin-bottom: 1rem;
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content__image img {
+    width: 80%;
+    height: 100%;
+    transform: rotate(0deg);
+    animation: toTurn 3s linear infinite;
+}
+
+.about__description {
+    grid-area: about_me;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.about__title {
+    width: 90%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5em;
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline wavy  var(--color-border-about-me-title);
+    transition: color 0.5ms;
+}
+
+.about__paragraph {
+    width: 90%;
+    font-family: var(--font);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.about__paragraph a {
+    display: inline-block;
+    text-decoration: none;
+    color: var( --color-purple-footer);
+    border-bottom: 2px solid var(--color-purple-border-card);
+    margin-bottom: 0.2rem;
+}
+
+.about__paragraph a:hover {
+    background-color: var(--color-border-about-me-title);
+}
+
+.about__title:hover {
+    color: var(--color-purple-border-card);
+}
+
+@keyframes toTurn {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
