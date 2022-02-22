@@ -23,14 +23,14 @@
     align-items: center;
 }
 
-.projects__vanilla {
+.projects__vanilla, .projects__react {
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.projects__vanilla_title {
+.projects__vanilla_title, .projects__react_title {
     font-size: 1.2rem;
     width: 100%;
     margin-bottom: 1rem;
@@ -45,7 +45,7 @@
     align-items: center;
 }
 
-.vanilla_card {
+.vanilla_card, .react_card{
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -56,18 +56,18 @@
     border-bottom-right-radius: 15px;
 }
 
-.vanilla_img {
+.vanilla_img, .react__card_img {
     width: 100%;
     height: 120px;
     margin-bottom: 0.5rem;
 }
 
-.vanilla_img img {
+.vanilla_img img, .react__card_img img {
     width: 100%;
     height: 100%;
 }
 
-.vanilla_title_card {
+.vanilla_title_card, .react__title_card {
     width: 90%;
     padding: 0.5em 0;
     font-size: 1.2rem;
@@ -75,7 +75,7 @@
     text-decoration: underline dashed var(--color-border-items-menu) 4px;
 }
 
-.vanilla_desc {
+.vanilla_desc, .react__card_desc {
     width: 90%;
     font-size: 1rem;
     padding: 0.5em 0;
@@ -83,14 +83,14 @@
     font-family: var(--font);
 }
 
-.vanilla_links_content {
+.vanilla_links_content, .card__react_links_content{
     width: 90%;
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-evenly;
 }
 
-.vanilla_btn {
+.vanilla_btn, .card__react_btn{
     width: 40%;
     font-size: 1rem;
     padding: 0.5em 0;
@@ -103,7 +103,7 @@
     background-color: var(--color-purple-btn);
 }
 
-.vanilla_btn:hover {
+.vanilla_btn:hover, .card__react_btn:hover {
     color: var(--color-border-about-me-title);
 }
 
