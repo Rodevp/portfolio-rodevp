@@ -12,7 +12,6 @@ function Nav() {
             menu.classList.toggle(navClasses.open__menu)
         })
 
-        console.log(menuHamburger)
     }, [])
 
   return (
