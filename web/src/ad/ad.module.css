@@ -15,7 +15,67 @@
     color: var(--color-purple-footer);
 }
 
-.ad_paragraph span {
+.left, .right {
     font-size: 2.5rem;
     color: var(--color-purple-border-card);
+}
+
+.left{
+    display: inline-block;
+    animation: move_span 0.2s linear alternate infinite;
+}
+
+.right {
+    display: inline-block;
+    animation: move_span 0.3s linear alternate infinite;
+}
+
+@keyframes move_span {
+    0% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .ad_paragraph {
+        font-size: 2.5rem;
+        padding: 1.5em 0;
+    }
+
+    .left, .right { 
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .ad_paragraph {
+        font-size: 2.8rem;
+        padding: 2em 0;
+    }
+
+    .left, .right { 
+        font-size: 3.8rem;
+    }
+
+}
+
+@media screen and (min-width: 1020px) {
+    .ad_paragraph {
+        font-size: 3rem;
+        padding: 2.8em 0;
+    }
+    .left, .right { 
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (min-width: 1020px) {
+    .ad_paragraph {
+        width: 80%;
+        font-size: 3.5rem;
+    }
 }

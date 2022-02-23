@@ -4,9 +4,9 @@ function Ad() {
   return (
     <section className={adClasses.ad}>
         <p className={adClasses.ad_paragraph}>
-            <span>¡</span>
+            <span className={adClasses.left}>¡</span>
                 Te ayudo a que tus ideas cobren vida con el código
-            <span>!</span>
+            <span className={adClasses.right}>!</span>
         </p>
     </section>
   )
