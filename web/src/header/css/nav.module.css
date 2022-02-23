@@ -17,21 +17,31 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 2.5rem;
+    top: 3rem;
     align-items: center;
     background-color:  var(--color-purple-btn);
     transform: scale(0);
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
     transition: transform 0.1s linear;
+    overflow: hidden;
 }
 
 .menu__item {
     width: 90%;
     padding: 1em 0;
+    margin-left: 1rem;
     font-family: var(--font);
     font-size: 1rem;
     list-style: none;
     color: var(--background);
     cursor: pointer;
+    transition: color 1ms;
+}
+
+.menu__item:hover {
+    color: var(--color-border-about-me-title);
 }
 
 .open__menu {
