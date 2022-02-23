@@ -20,9 +20,9 @@ function About() {
                 <a 
                   target='_blank'
                   href="https://www.twitch.tv/midudev"> Midudev</a>.
-                También soy aficionado a las matematicas🧮, boxeo 🥊 y a programar,
-                actualmente programo con Javascript y utilizo React Js ⚛️. 
-                Mis intereses no paran, quiero aprender lenguajes como python o GOlang.
+                También soy aficionado a las mátematicas🧮, boxeo 🥊 y a programar,
+                actúalmente programo con Javascript y utilizo React Js ⚛️. 
+                Mis intereses no paran, quiero aprender lenguajes como python u GOlang.
                 ¡Ojalá podamos trabajar juntos!.
             </p>
         </section>
