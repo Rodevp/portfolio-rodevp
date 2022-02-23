@@ -16,12 +16,14 @@ function Card({img, title, desc, gitUrl, demoUrl}) {
             <section className={cardClasses.card_links_content}>
                 <a
                     href={gitUrl}
+                    target='_blank'
                     className={cardClasses.card_btn}
                 >
                     Ver Código
                 </a>
                 <a
                     href={demoUrl}
+                    target='_blank'
                     className={cardClasses.card_btn}
                 >
                     Ver Demo
