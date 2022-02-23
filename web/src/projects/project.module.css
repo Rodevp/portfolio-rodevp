@@ -81,3 +81,25 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+@media screen and (min-width: 920px) {
+    
+    .projects__vanilla_title, .projects__react_title {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects__js {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1020px)  {
+    .projects__vanilla_title, .projects__react_title {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+}
