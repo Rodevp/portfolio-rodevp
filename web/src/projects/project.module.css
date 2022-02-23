@@ -13,7 +13,7 @@
     font-family: var(--font);
     text-align: center;
     text-decoration: underline wavy var(--color-border-about-me-detail);
-
+    
 }
 
 .projects__wrapper {
@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .projects__vanilla_title, .projects__react_title {

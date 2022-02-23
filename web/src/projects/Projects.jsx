@@ -38,29 +38,13 @@ function Projects() {
                         React Js ⚛️
                     </h2>
                     <section className={projectsClasses.projects__react}>
-                        <div className={projectsClasses.react_card}>
-                            <div className={projectsClasses.react__card_img}>
-                                <img src={''} alt='project image' />
-                            </div>
-                            <h2 className={projectsClasses.react__title_card}>
-                            </h2>
-                            <section className={projectsClasses.react__card_desc}>
-                            </section>
-                            <section className={projectsClasses.card__react_links_content}>
-                                <a
-                                    href={''}
-                                    className={projectsClasses.card__react_btn}
-                                >
-                                    Ver Código
-                                </a>
-                                <a
-                                    href={''}
-                                    className={projectsClasses.card__react_btn}
-                                >
-                                    Ver Demo
-                                </a>
-                            </section>
-                        </div>
+                        <Card
+                            title={'Prueba'}
+                            img={'ye ye'}
+                            gitUrl={'a'}
+                            demoUrl={'a'}
+                            desc={'a'}
+                        />
                     </section>
                 </div>
             </section>
