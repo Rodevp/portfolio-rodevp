@@ -35,8 +35,8 @@
 
 .hero__title_title span {
     font-size: 5.5rem;
-    transform: rotate(10deg);
     color: var(--color-purple-border-card);
+    animation: moveLetter 0.2s linear alternate infinite;
 }
 
 .hero__description_paragraph {
@@ -50,5 +50,13 @@
     padding-left: 1em;
 }
 
+@keyframes moveLetter {
+    0% {
+        transform: translateY(-15px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(10deg);
+    }    
+}
 
 
