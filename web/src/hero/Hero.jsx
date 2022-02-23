@@ -16,7 +16,7 @@ function Hero() {
                     </p>
                     <p className={heroClasses.hero__description_paragraph}>
                         Desarrolador frontend
-                        <span>
+                        <span className={heroClasses.logo_hero_language}>
                             <img src={logoJs} alt='logo javascript' />
                         </span>
                     </p>
