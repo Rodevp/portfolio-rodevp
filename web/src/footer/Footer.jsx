@@ -6,7 +6,7 @@ import logoGit from '../images/git.png'
 function Footer() {
 
     return (
-        <footer className={classesFooter.footer} >
+        <footer className={classesFooter.footer} id='footer'>
             <div className={classesFooter.network}>
                 <a 
                     href='https://www.linkedin.com/in/rodrigo-rodriguez-046712181'

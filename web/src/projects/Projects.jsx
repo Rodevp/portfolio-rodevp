@@ -7,7 +7,7 @@ function Projects() {
     const vanillaProjects = [...vanilla]
 
     return (
-        <section className={projectsClasses.projects}>
+        <section className={projectsClasses.projects} id='projects'>
             <h2 className={projectsClasses.projects__title}>
                 Experiencia
             </h2>

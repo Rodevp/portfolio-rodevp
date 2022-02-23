@@ -40,6 +40,12 @@
     transition: color 1ms;
 }
 
+.menu__item a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
 .menu__item:hover {
     color: var(--color-border-about-me-title);
 }

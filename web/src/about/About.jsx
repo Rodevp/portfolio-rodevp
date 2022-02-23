@@ -4,7 +4,7 @@ import imgReact from '../images/logo_react.svg'
 
 function About() {
   return (
-    <section className={aboutClasses.about}>
+    <section className={aboutClasses.about} id='about'>
         <div className={aboutClasses.content__image}>
             <img src={imgReact} alt='image logo of react' />
         </div>

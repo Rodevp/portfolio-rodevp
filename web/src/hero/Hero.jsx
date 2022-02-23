@@ -3,7 +3,7 @@ import logoJs from '../images/js.png'
 
 function Hero() {
     return (
-        <section className={heroClasses.hero}>
+        <section className={heroClasses.hero}  id='main'>
             <div className={heroClasses.hero__me}>
                 <section className={heroClasses.img__content}>
                     <img src="" alt="" />
