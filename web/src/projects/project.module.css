@@ -36,6 +36,7 @@
     width: 100%;
     justify-content: center;
     background-color: var(--color-purple-btn);
+    margin-bottom: 0;
 }
 
 .projects__react p {

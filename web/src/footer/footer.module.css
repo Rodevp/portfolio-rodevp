@@ -44,3 +44,28 @@
     font-family: var(--font);
     color: var(--background);
 }
+
+@media screen and (min-width: 920px) {
+    .footer {
+        flex-direction: row;
+    }
+
+    .network {
+        justify-content: flex-end;
+    }
+
+    .network_item {
+        margin-left: 1rem;
+    }
+
+    .copy_content {
+        align-items: center;
+        margin-bottom: 0;
+        margin-left: 1rem;
+        border-left: 4px solid var(--color-purple-btn);
+    }
+
+    .copy_content p {
+        font-size: 1.2rem;
+    }
+}
