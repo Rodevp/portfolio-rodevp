@@ -31,6 +31,19 @@
     margin-bottom: 1.5rem;
 }
 
+.projects__react  {
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color-purple-btn);
+}
+
+.projects__react p {
+    font-family: var(--font);
+    color: var(--color-purple-footer);
+    font-size: 2rem;
+}
+
 .projects__vanilla_title, .projects__react_title {
     font-size: 1.2rem;
     width: 100%;

@@ -51,13 +51,9 @@ function Projects() {
                         </span>
                     </h2>
                     <section className={projectsClasses.projects__react}>
-                        <Card
-                            title={'Prueba'}
-                            img={'ye ye'}
-                            gitUrl={'a'}
-                            demoUrl={'a'}
-                            desc={'a'}
-                        />
+                        <p>
+                            PRÓXIMAMENTE...
+                        </p>
                     </section>
                 </div>
             </section>
