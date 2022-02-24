@@ -3,12 +3,15 @@
     background-color: var(--background);
     display: flex;
     justify-content: center;
-    padding: 0.5em 0;
     position: sticky;
     top: 0;
     z-index: 3;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    max-width: 780px;
+    margin: auto;
 }
 
 .content__img {
@@ -34,8 +37,25 @@
     }
 
     .content__nav {
-        width: 60%;
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
+        width: 70%;
     }
+
+}
+
+@media  screen and (min-width: 770px) {
+    
+    .header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media  screen and (min-width: 920px) {
+    
+    .content__nav {
+        justify-content: flex-end;
+    }
+
 }
