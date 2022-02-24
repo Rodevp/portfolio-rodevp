@@ -13,7 +13,7 @@ function Projects() {
     return (
         <section className={projectsClasses.projects} id='projects'>
             <h2 className={projectsClasses.projects__title}>
-                Experiencia
+                Proyectos
             </h2>
             <section className={projectsClasses.projects__wrapper}>
                 <div className={projectsClasses.projects__vanilla}>
