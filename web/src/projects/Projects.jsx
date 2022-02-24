@@ -1,8 +1,8 @@
 import Card from './card/Card'
 import projectsClasses from './project.module.css'
-import logoHtml from '../images/html5.png'
-import logoCss from '../images/css3.png'
-import logoJS from '../images/js.png'
+import logoHtml from '../images/html.svg'
+import logoCss from '../images/css.svg'
+import logoJS from '../images/javascript.svg'
 import logoReact from '../images/logo_react.svg'
 import { vanilla } from './data.js'
 

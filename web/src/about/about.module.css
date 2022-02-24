@@ -19,7 +19,6 @@
 .content__image img {
     width: 250px;
     height: 250px;
-    transform: rotate(0deg);
     animation: toTurn 3s linear infinite;
 }
 
