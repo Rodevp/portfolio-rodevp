@@ -84,15 +84,6 @@
 }
 
 
-@keyframes moveLetter {
-    0% {
-        transform: translateY(-15px) rotate(10deg);
-    }
-    100% {
-        transform: translateY(0) rotate(10deg);
-    }    
-}
-
 @media screen and (min-width: 520px) {
     .hero__title_title {
         font-size: 3.5rem;
@@ -112,6 +103,15 @@
         font-size: 1.6rem;
     }
 
+    .hero__network_item  {
+        font-size: 1.2rem;
+    }
+
+    .hero__description_sentence {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
 }
 
 @media screen and (min-width: 720px) {
@@ -122,6 +122,10 @@
 
     .hero__title_title span {
         font-size: 5.8rem;
+    }
+
+    .hero__network_item  {
+        width: 20%;
     }
 
 }
@@ -141,33 +145,54 @@
     }
     
     .img__content {
-        width: 60%;
-        height: 100%;
+        width: 220px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgba(175,105,205,1) 32%, rgba(128,244,244,1) 100%);
     }
 
     .img__content img {
-        width: 100%;
-        height: 100%;
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
         object-fit: contain;
     }
 
     .hero__description {
-        width: 55%;
+        width: 50%;
+    }
+
+    .hero__description_paragraph {
+        font-size: 1.2rem;
     }
     
     .hero__title_title {
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
 
     .hero__title_title span {
-        font-size: 6rem;
+        font-size: 5rem;
         animation: none;
         transform: rotate(10deg);
     }
 
     .logo_hero_language {
+        height: 55px;
+        width: 50px;
+        margin-left: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         transform-origin: center;
         animation: rotateLogo 0.6s linear alternate infinite;
+    }
+
+    .logo_hero_language img {
+        width: 35px;
+        height: 35px;
     }
 
     @keyframes floatingImage {
@@ -193,10 +218,10 @@
 
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1020px) {
     
     .hero{
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
 
     .hero__me {
@@ -206,13 +231,36 @@
     .hero__description {
         width: 45%;
     }
+
+    .hero__network_item img {
+        width: 32px;
+        height: 22px;
+    }
 }
 
 @media screen and (min-width: 1040px) {
     .hero__me {
-        width: 40%;
+        width: 45%;
     }
     .hero__description {
-        width: 40%;
+        width: 45%;
     }
+
+    .hero__network_item  {
+        width: 25%;
+    }
+
+    .hero__network_item img {
+        width: 35px;
+        height: 25px;
+    }
+}
+
+@keyframes moveLetter {
+    0% {
+        transform: translateY(-15px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(10deg);
+    }    
 }

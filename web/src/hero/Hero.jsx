@@ -1,5 +1,5 @@
 import heroClasses from './hero.module.css'
-import logoJs from '../images/js.png'
+import logoJs from '../images/javascript.svg'
 import imgMe from '../images/me.jpg'
 import imgLinkedin from '../images/linkedin.svg'
 import imgGit from '../images/github.svg'
@@ -23,13 +23,13 @@ function Hero() {
                         <span>R</span>ODRIGO
                     </p>
                     <p className={heroClasses.hero__description_paragraph}>
-                        Desarrolador frontend
+                        Desarrollador frontend
                         <span className={heroClasses.logo_hero_language}>
                             <img src={logoJs} alt='logo javascript' />
                         </span>
                     </p>
                     <p className={heroClasses.hero__description_sentence}>
-                        🍦 Captador profesional de los helados de vainilla. 🍨
+                        🍦 Catador profesional de los helados de vainilla. 🍨
                     </p>
                     <div className={heroClasses.hero__network}>
                         <a 
