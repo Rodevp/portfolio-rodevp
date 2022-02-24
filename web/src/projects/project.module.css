@@ -83,6 +83,14 @@
     align-items: center;
 }
 
+@media screen and (min-width: 770px) {
+    .projects__js {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
 
 @media screen and (min-width: 920px) {
     
@@ -91,11 +99,6 @@
         margin-bottom: 2rem;
     }
 
-    .projects__js {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
 }
 
 @media screen and (min-width: 1020px)  {

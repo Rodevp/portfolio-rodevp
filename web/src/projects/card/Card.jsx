@@ -1,15 +1,12 @@
 import cardClasses from './card.module.css'
 
 
-function Card({img, title, desc, gitUrl, demoUrl}) {
+function Card({title, desc, gitUrl, demoUrl}) {
     return (
         <div className={cardClasses.card}>
-            <div className={cardClasses.card_img}>
-                <img src={img} alt='project image' />
-            </div>
-            <h2 className={cardClasses.card_title_card}>
+            <h3 className={cardClasses.card_title_card}>
                 {title}
-            </h2>
+            </h3>
             <section className={cardClasses.card_desc}>
                 {desc}
             </section>

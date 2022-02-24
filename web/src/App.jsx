@@ -5,17 +5,21 @@ import About from './about/About.jsx'
 import Projects from './projects/Projects.jsx'
 import Footer from './footer/Footer.jsx'
 
+import mainClass from './app.module.css'
+
 
 function App() {
 
   return (
     <>
       <Header />
-      <Hero />
-      <Ad />
-      <About />
-      <Projects />
-      <Footer />
+      <main className={mainClass.main}>
+        <Hero />
+        <Ad />
+        <About />
+        <Projects />
+        <Footer />
+      </main>
     </>
   )
 }
