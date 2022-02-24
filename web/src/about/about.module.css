@@ -17,8 +17,8 @@
 }
 
 .content__image img {
-    width: 80%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     transform: rotate(0deg);
     animation: toTurn 3s linear infinite;
 }
@@ -35,7 +35,7 @@
     font-size: 1.8rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5em;
-    font-family: var(--font);
+    font-family: var(--font-title);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,8 +46,8 @@
 .about__paragraph {
     width: 90%;
     font-family: var(--font);
-    font-size: 1rem;
-    letter-spacing: 0.1em;
+    font-size: 0.90rem;
+    letter-spacing: 0.2em;
 }
 
 .about__paragraph a {
@@ -83,7 +83,12 @@
     }
 
     .content__image img {
-        height: 80%;
+        width: 400px;
+        height: 400px;
+    }
+
+    .about__paragraph {
+        font-size: 0.95rem;
     }
 }
 
@@ -101,8 +106,8 @@
 
 @media screen and (min-width: 820px) {
     .content__image img {
-        width: 60%;
-        height: 90%;
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -114,16 +119,15 @@
     }
 
     .content__image img {
-        width: 100%;
-        height: 100%;
+        width: 400px;
     }
 
     .about__title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .about__paragraph {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
 }
@@ -134,14 +138,17 @@
                             "about_me image image";
     }
     .content__image {
-        padding: 2em 0;
+        padding: 1em 0;
     }
+
     .about__description {
-        width: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .content__image img {
-        width: 110%;
-        height: 120%;
+        height: 400px;
     }
 }
