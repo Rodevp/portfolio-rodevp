@@ -4,12 +4,21 @@
     padding-top: 1em;
 }
 
-.nav img {
+.hamburguer__menu {
     width: 30px;
     height: 30px;
     align-self: flex-end;
     position: relative;
     cursor: pointer;
+    background-image: url('../../images/menu.png');
+}
+
+.hamburguer__menu__close {
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-image: url('../../images/marca-x.png')
 }
 
 .menu {
