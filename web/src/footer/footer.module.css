@@ -5,28 +5,14 @@
     background-color: var(--color-purple-border-card);
 }
 
-.network {
+.other {
     width: 80%;
     padding: 1em 0;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.network_item {
-    width: 50px;
-    height: 50px;
-    padding: 0.8em 0;
-    display: inline-flex;
+    font-size: 1.2rem;
+    display: flex;
     justify-content: center;
-    border-radius: 50%;
-    border: 2px solid var(--color-purple-btn);
-    cursor: pointer;
-    transition: background 0.2s linear;
-}
-
-.network_item:hover {
-    background-color: var(--background);
+    font-family: var(--font);
 }
 
 .copy_content {
