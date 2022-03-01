@@ -12,7 +12,9 @@
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family: var(--font);
+    color: var(--background);
 }
 
 .copy_content {

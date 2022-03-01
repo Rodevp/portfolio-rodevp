@@ -4,7 +4,7 @@ import logoHtml from '../images/html.svg'
 import logoCss from '../images/css.svg'
 import logoJS from '../images/javascript.svg'
 import logoReact from '../images/logo_react.svg'
-import { vanilla } from './data.js'
+import { vanilla, react } from './data.js'
 
 function Projects() {
 
@@ -51,9 +51,18 @@ function Projects() {
                         </span>
                     </h2>
                     <section className={projectsClasses.projects__react}>
-                        <p>
-                            PRÓXIMAMENTE...
-                        </p>
+                        {
+                            react.map(project => (
+                                <Card
+                                    key={project.title}
+                                    title={project.title}
+                                    img={project.img}
+                                    gitUrl={project.gitUrl}
+                                    demoUrl={project.demoUrl}
+                                    desc={project.desc}
+                                />
+                            ))
+                        }
                     </section>
                 </div>
             </section>

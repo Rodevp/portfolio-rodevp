@@ -1,7 +1,7 @@
 const vanilla = [
     {
         title: 'Color Flipper',
-        desc: 'generador de color ramdon hecho con vanilla js, css y html.',
+        desc: 'Generador de color ramdon hecho con vanilla js, css y html.',
         gitUrl: 'https://github.com/Rodevp/color-flipper',
         demoUrl: 'https://rodevp.github.io/color-flipper/'
     },
@@ -26,7 +26,12 @@ const vanilla = [
 ]
 
 const react = [
-
+    {
+        title: 'Portafolio',
+        desc: 'Portafolio hecho con react js y css modules. ',
+        gitUrl: 'https://github.com/Rodevp/portfolio-rodevp',
+        demoUrl: 'https://rodevp.netlify.app/'
+    }
 ]
 
 export {
