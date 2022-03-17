@@ -5,8 +5,8 @@
   }
   
   @font-face {
-    font-family: 'inter';
-    src: url('');
+    font-family: 'minecraft';
+    src: url('./font/Minecraft.ttf');
   }
   
   @font-face {
@@ -24,7 +24,7 @@
     --color-blue: #6096e5;
     --color-purple-ligth: #f988ff;
   
-    --font: 'inter';
+    --font: 'minecraft';
     --font-title: 'rubik';
   
   }
