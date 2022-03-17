@@ -3,6 +3,7 @@
     <Header />
     <main class="main">
       <Hero />
+      <Ad />
     </main>
   </div>
 </template>
@@ -10,10 +11,12 @@
 <script>
 import Header from "./header/Header.vue";
 import Hero from "./hero/Hero.vue"
+import Ad from "./ad/Ad.vue"
 export default {
   components: {
     Header,
-    Hero
+    Hero,
+    Ad
   },
 }
 
