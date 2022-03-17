@@ -1,18 +1,40 @@
 <template>
   <nav className="nav">
-        <div  id='hamburguer' className="hamburguer__menu" >
+        <div  id='hamburguer' className="hamburguer__menu" >    
         </div>
         <ul className="menu" id='menu'>
-            <li className="menu__item"><a href='#main'>Inicio</a></li>
-            <li className="menu__item"><a href='#about'>Sobre mi </a></li>
-            <li className="menu__item"><a href='#projects'>Proyectos </a></li>
-            <li className="menu__item"><a href='#footer' >Contacto</a></li>
+            <li className="menu__item"><a href='#main'  @click="closeMenu">Inicio</a></li>
+            <li className="menu__item"><a href='#about' @click="closeMenu">Sobre mi </a></li>
+            <li className="menu__item"><a href='#projects' @click="closeMenu">Proyectos </a></li>
+            <li className="menu__item"><a href='#footer'  @click="closeMenu">Contacto</a></li>
         </ul>
     </nav>
 </template>
 
 <script>
+
 export default {
+
+    methods: {
+        closeMenu() {
+            const hamburguer = document.getElementById('hamburguer')
+            const menu = document.getElementById('menu')
+            menu.classList.toggle('open__menu')
+            hamburguer.classList.toggle('hamburguer__menu__close')
+        }
+    },
+
+    async mounted() {
+
+        const menuHamburger = document.getElementById('hamburguer')
+        const menu = document.getElementById('menu')
+    
+        menuHamburger.addEventListener('click', e => {
+            menu.classList.toggle('open__menu')
+            menuHamburger.classList.toggle('hamburguer__menu__close')
+        })
+
+    }
 
 }
 </script>
@@ -30,7 +52,7 @@ export default {
     align-self: flex-end;
     position: relative;
     cursor: pointer;
-    background-image: url('../../images/menu.png');
+    background-image: url('../assets/menu.png');
 }
 
 .hamburguer__menu__close {
@@ -38,7 +60,7 @@ export default {
     height: 32px;
     background-repeat: no-repeat;
     object-fit: contain;
-    background-image: url('../../images/marca-x.png')
+    background-image: url('../assets/marca-x.png')
 }
 
 .menu {
@@ -50,7 +72,7 @@ export default {
     top: 3rem;
     left: 55%;
     align-items: center;
-    background-color:  var(--color-purple-btn);
+    background-color:  var(--color-cyan);
     overflow: hidden;
     margin-top: 2rem;
 }
@@ -67,7 +89,7 @@ export default {
     font-family: var(--font);
     font-size: 1rem;
     list-style: none;
-    color: var(--background);
+    color: var(--color-blue);
     cursor: pointer;
     transition: color 1ms;
 }

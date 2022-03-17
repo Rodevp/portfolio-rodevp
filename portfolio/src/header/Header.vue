@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="content__img">
-      <img src="#" alt="image of logo" />
+      <img src="../assets/logo_rodevp.png" alt="image of logo" />
     </div>
     <div class="content__nav">
       <Nav />
@@ -10,13 +10,14 @@
 </template>
 
 <script>
-import Nav from "./Nav.vue";
+import Nav from "./Nav.vue"
 
 export default {
   components: {
     Nav,
   },
-};
+}
+
 </script>
 
 <style scoped>
@@ -44,7 +45,7 @@ export default {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid var(--color-purple-border-card);
+  border: 1px solid var(--color-purple-ligth);
 }
 
 .content__nav {

@@ -6,26 +6,23 @@
   
   @font-face {
     font-family: 'inter';
-    src: url('./font/Inter-Medium.ttf');
+    src: url('');
   }
   
   @font-face {
     font-family: 'rubik';
-    src: url('./font/Rubik-Medium.ttf');
+    src: url('');
   }
   
   
   :root {
     
-    --background: #f3f3f3;
-    --background-purple-ligth: #e6ccef;
-    --color-purple-btn: #cb9bde;
-    --color-purple-footer: #af69cd;
-    --color-purple-border-card: #9032bb;
+    --background: #1c003b;
+    --color-purple: #9032bb;
   
-    --color-border-about-me-title: #80f4f4;
-    --color-border-about-me-detail: #6096e5;
-    --color-border-items-menu: #c6edff;
+    --color-cyan: #80f4f4;
+    --color-blue: #6096e5;
+    --color-purple-ligth: #f988ff;
   
     --font: 'inter';
     --font-title: 'rubik';
