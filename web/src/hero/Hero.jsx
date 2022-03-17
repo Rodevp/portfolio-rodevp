@@ -8,8 +8,6 @@ import imgTwitter from '../images/twitter.svg'
 
 function Hero() {
 
-    console.log(imgGit, imgLinkedin, imgLinkedin)
-
     return (
         <section className={heroClasses.hero}  id='main'>
             <div className={heroClasses.hero__me}>

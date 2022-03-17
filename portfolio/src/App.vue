@@ -2,19 +2,21 @@
   <div>
     <Header />
     <main class="main">
-
+      <Hero />
     </main>
   </div>
 </template>
 
 <script>
 import Header from "./header/Header.vue";
-
+import Hero from "./hero/Hero.vue"
 export default {
   components: {
     Header,
+    Hero
   },
-};
+}
+
 </script>
 
 <style>
