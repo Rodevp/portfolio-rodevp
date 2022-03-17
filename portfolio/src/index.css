@@ -10,8 +10,8 @@
   }
   
   @font-face {
-    font-family: 'rubik';
-    src: url('');
+    font-family: '04b';
+    src: url('./font/04B_30__.ttf');
   }
   
   
@@ -26,7 +26,7 @@
     --white: #f9fafc;
   
     --font: 'minecraft';
-    --font-title: 'rubik';
+    --font-title: '04b';
   
   }
   

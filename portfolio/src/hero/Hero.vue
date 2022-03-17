@@ -11,7 +11,7 @@
                         <span>R</span>ODRIGO
                     </p>
                     <p class='hero__description_paragraph'>
-                        Desarrollador frontend
+                        Desarrollador Backend
                         <span class='logo_hero_language'>
                             <img src='../assets/javascript.svg' alt='logo javascript' />
                         </span>
@@ -23,7 +23,7 @@
                         <a 
                             href='https://www.linkedin.com/in/rodrigo-rodriguez-046712181/'
                             target='_blank'
-                            class='network_item'
+                            class='hero__network_item'
                             >
                             <p>Linkedin</p>
                             <img src='../assets/linkedin.svg' alt='logo linkedin' />
@@ -49,12 +49,6 @@
             </section>
         </section>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style>
 .hero {
@@ -83,27 +77,30 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--font);
+    font-family: var(--font-title);
 }
 
 .hero__title_title {
-    font-size: 2.8rem;
+    font-size: 2rem;
     display: flex;
     align-items: baseline;
     letter-spacing: 0.2em;
+    color: var(--white);
 }
 
 .hero__title_title span {
-    font-size: 5.5rem;
+    font-size: 5rem;
     color: var(--color-purple-border-card);
     animation: moveLetter 0.2s linear alternate infinite;
 }
 
 .hero__description_paragraph {
     font-size: 1rem;
+    padding-bottom: 1em;
     display: flex;
     align-items: center;
-    padding-bottom: 1em;
+    font-family: var(--font);
+    color: var(--white);
 }
 
 .hero__description_paragraph span {
@@ -114,27 +111,39 @@ export default {
     font-size: 1rem;
     width: 100%;
     padding: 0.5rem 0;
-    text-align: center;
     font-weight: 400;
-    font-family: var(--font-title);
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: var(--font);
+    color: var(--white);
 }
 
 .hero__network {
     width: 100%;
-    padding: 1em 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .hero__network_item {
-    width: 30%;
+    width: 60%;
     padding: 1em 0;
-    display: inline-block;
-    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    font-size: 1rem;
     font-family: var(--font);
-    color: var(--color-purple-border-card)
+    color: var(--white);
+    background-color: var(--color-purple-ligth);
+}
+
+.hero__network_item:hover {
+    background-color: var(--background);
 }
 
 .hero__network_item img {
@@ -184,7 +193,7 @@ export default {
     }
 
     .hero__network_item  {
-        width: 20%;
+        width: 50%;
     }
 
 }
@@ -254,6 +263,16 @@ export default {
         height: 35px;
     }
 
+    .hero__network {
+        flex-direction: row;
+    }
+
+    .hero__network_item {
+        width: 30%;
+        flex-direction: column;
+        padding: 0.5em 0;
+    }
+
     @keyframes floatingImage {
         0% {
             transform: translateY(-10px);
@@ -303,10 +322,6 @@ export default {
     }
     .hero__description {
         width: 45%;
-    }
-
-    .hero__network_item  {
-        width: 25%;
     }
 
     .hero__network_item img {
