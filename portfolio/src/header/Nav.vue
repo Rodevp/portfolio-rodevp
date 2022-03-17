@@ -100,9 +100,6 @@ export default {
     font-family: inherit;
 }
 
-.menu__item:hover {
-    color: var(--color-border-about-me-title);
-}
 
 @media screen and (min-width: 770px) {
 
